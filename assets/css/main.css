@@ -1,0 +1,235 @@
+.slider-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-banner img {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 60px;
+}
+.slider-banner span {
+  position: absolute;
+  cursor: pointer;
+  font-size: 50px;
+  color: #4d5059;
+  padding: 0 30px;
+  opacity: 0.6;
+  transition: 0.8s ease;
+  font-weight: bold;
+  border-radius: 10px;
+  top: 300px;
+  margin-top: 150px;
+}
+.slider-banner span:hover {
+  background-color: #8a8a8a;
+  opacity: 0.2;
+}
+.slider-banner span#btn-prox {
+  right: 0;
+}
+.slider-banner span#btn-anterior {
+  left: 0;
+}
+.frase-efeito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.frase-efeito h1 {
+  color: #4d5059;
+  text-align: center;
+  line-height: 30px;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sobre h1 {
+  color: #4d5059;
+  margin: 30px 0 30px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.sobre p {
+  width: 100%;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 100px;
+  letter-spacing: 1px;
+  color: #4d5059;
+}
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contato h1 {
+  color: #4d5059;
+  margin: 30px 0 30px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.form-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /*border: 1px solid #c7c7c7;*/
+  background-color: #eeeded;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 100%;
+  max-width: 560px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-bottom: 100px;
+}
+.form-contato-input {
+  line-height: 60px;
+}
+.form-contato-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 16px;
+}
+.form-contato-input textarea {
+  resize: none;
+  width: 360px;
+  height: 150px;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 16px 16px;
+  margin-top: 5px;
+}
+.form-contato h4 {
+  color: #4d5059;
+}
+.form-contato-input button {
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #0069d9;
+  border-radius: 5px;
+  padding: 10px;
+  width: 360px;
+}
+.form-contato-input button:hover {
+  cursor: pointer;
+  background-color: #1375df;
+}
+.main-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.main-home-content {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  margin: 5px;
+  text-align: justify;
+  font-size: 1.2em;
+  width: 32%;
+}
+.item img {
+  width: 100%;
+  height: 250px;
+}
+.item p {
+  color: #4d5059;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* menu-mobile */
+.menu-mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 40px 15px 40px 0;
+  cursor: pointer;
+}
+.mm-line {
+  height: 6px;
+  background-color: #4d5059;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sobre p {
+    padding: 0 50px;
+  }
+  .menu {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slider-banner img {
+    height: 460px;
+  }
+  .slider-banner span {
+    top: 230px;
+  }
+  .item {
+    width: 31.8%;
+  }
+  .sobre p {
+    padding: 0 40px;
+  }
+  .menu nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #c7c7c7;
+    margin-top: 5px;
+    padding: 15px 0;
+  }
+  .menu nav li {
+    margin-top: 15px;
+  }
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .item {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .form-contato-input {
+    padding: 0 40px;
+  }
+  .slider-banner img {
+    height: 400px;
+  }
+  .slider-banner span {
+    top: 200px;
+  }
+  .sobre p {
+    padding: 0 30px;
+  }
+}
